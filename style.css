@@ -1,0 +1,77 @@
+body {
+    background-color: #343d46;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.content {
+    grid-area: 1 / 2 / 3 / 3; 
+    text-align: center;
+}
+
+.name {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.link {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    margin: 15px;
+}
+
+.link:hover {
+    background-color: #343d46;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.link:not(:hover) {
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.linklike {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.social-icon:not(:hover) {
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.social-tooptip {
+    visibility: hidden;
+}
